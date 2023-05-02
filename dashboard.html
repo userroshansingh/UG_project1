@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="dashboard.css" />
+    <title>Medical History Dashboard</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      thead{
+        color:blue;
+      }
+      th,
+      td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .card {
+        background-color: #fff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 style="text-align: center;">Medical History Dashboard</h1>
+    <div class="container">
+      <div class="card">
+        <h2>Patient Information</h2>
+        <p><strong>Patient Name:</strong> Roshan Singh</p>
+        <p><strong>Contact Number:</strong> 9457327601</p>
+        <p><strong>Email:</strong> singhroshan.dinesh.phe20@itbhu.ac.in</p>
+        <p><strong>Date of Last Form Update:</strong> 2022-04-01</p>
+        <p><strong>Current Physician Name:</strong> Dr. Naidu</p>
+        <p><strong>Current Pharmacy Name:</strong> Umang Pharmacy</p>
+      </div>
+      <div class="card">
+        <h2>Current and Past Medications</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Medication Name</th>
+              <th>Dosage</th>
+              <th>Frequency</th>
+              <th>Start Date</th>
+              <th>End Date</th>
+              <th>Purpose</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Medication A</td>
+              <td>10mg</td>
+              <td>Once daily</td>
+              <td>2021-01-01</td>
+              <td>2021-06-30</td>
+              <td>Treatment X</td>
+            </tr>
+            <tr>
+              <td>Medication B</td>
+              <td>20mg</td>
+              <td>Twice daily</td>
+              <td>2021-07-01</td>
+              <td>2022-03-31</td>
+              <td>Treatment Y</td>
+            </tr>
+            <!-- Add additional rows as needed -->
+          </tbody>
+        </table>
+      </div>
+      <div class="card">
+        <h2>Surgical Procedures</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Procedure</th>
+              <th>Physician</th>
+              <th>Hospital</th>
+              <th>Date</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Procedure A</td>
+              <td>Dr. Johnson</td>
+              <td>Memorial Hospital</td>
+              <td>2019-05-15</td>
+              <td>Successful</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card">
+        <h2>Major Illnesses</h2>
+        <table id="illnessesTable">
+          <thead>
+            <tr>
+              <th>Illness</th>
+              <th>Start Date</th>
+              <th>End Date</th>
+              <th>Physician</th>
+              <th>Treatment Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Table data will be added dynamically using JavaScript -->
+          </tbody>
+        </table>
+      </div>
+  
+      <div class="card">
+        <h2>Vaccinations</h2>
+        <table id="vaccinationsTable">
+          <thead>
+            <tr>
+              <th>Vaccination</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Table data will be added dynamically using JavaScript -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    
+  </body>
+</html>
+

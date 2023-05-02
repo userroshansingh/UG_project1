@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="form_page.css">
+
+    <title>Medical History Form</title>
+  </head>
+  <body>
+    <h1>Medical History Form</h1>
+    <form>
+      <label for="name">Patient Name:</label>
+      <input type="text" id="name" name="name" required><br>
+
+      <label for="contact">Contact Number:</label>
+      <input type="tel" id="contact" name="contact" required><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="last-update">Date of Last Form Update:</label>
+      <input type="date" id="last-update" name="last-update" required><br>
+
+      <label for="physician">Current Physician Name:</label>
+      <input type="text" id="physician" name="physician" required><br>
+
+      <label for="pharmacy">Current Pharmacy Name:</label>
+      <input type="text" id="pharmacy" name="pharmacy" required><br>
+
+      <h2>Current and Past Medications</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Medication Name</th>
+            <th>Dosage</th>
+            <th>Frequency</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="text" name="medication-name"></td>
+            <td><input type="text" name="dosage"></td>
+            <td><input type="text" name="frequency"></td>
+            <td><input type="date" name="start-date"></td>
+            <td><input type="date" name="end-date"></td>
+            <td><input type="text" name="purpose"></td>
+          </tr>
+          <!-- Add additional rows as needed -->
+        </tbody>
+      </table>
+
+      <h2>Surgical Procedures</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Procedure</th>
+            <th>Physician</th>
+            <th>Hospital</th>
+            <th>Date</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="text" name="procedure"></td>
+            <td><input type="text" name="physician"></td>
+            <td><input type="text" name="hospital"></td>
+            <td><input type="date" name="date"></td>
+            <td><input type="text" name="notes"></td>
+          </tr>
+          <!-- Add additional rows as needed -->
+        </tbody>
+      </table>
+
+      <h2>Major Illnesses</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Illness</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Physician</th>
+            <th>Treatment Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="text" name="illness"></td>
+            <td><input type="date" name="illness-start"></td>
+            <td><input type="date" name="illness-end"></td>
+            <td><input type="text" name="illness-physician"></td>
+            <td><input type="text" name="illness-notes"></td>
+      </tr>
+      <!-- Add additional rows as needed -->
+    </tbody>
+  </table>
+
+  <h2>Vaccinations</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Vaccination</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="text" name="vaccination"></td>
+        <td><input type="date" name="vaccination-date"></td>
+      </tr>
+      <!-- Add additional rows as needed -->
+    </tbody>
+  </table>
+
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
+
